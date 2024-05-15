@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <style>
+
+        body{
+            background-color: aquamarine;
+        }
+
+        .calculator-body{
+            background-color: #fff;
+            height: 320px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+           
+
+        }
+
+        .calculator-screen{
+            text-align: end;
+            color: white;
+            background-color: black;
+            border-radius: 10px 10px 0 0;
+            width: 280px;
+            font-size: 30px;
+            height: 70px;
+            border: none;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .buttons-container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 230px;
+            justify-content: space-evenly;
+            
+        }
+
+        .btn{
+            color: black;
+            width: 60px;
+            background-color:hsl(0deg 0% 78.04%);
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: larger;
+            margin: auto;
+        }
+
+        .equal{
+            height: 180px;
+            margin-bottom: 0%;
+            background-color: hsl(143.44deg 87.27% 43.14%);
+            color: #fff;
+        }
+
+        .divide{
+            margin-top: 0%;
+            background-color: hsl(0deg 0.79% 50.59%);
+            color: #fff;
+        }
+
+        .cut{
+            background-color: hsl(359.72deg 100% 57.84%);
+            color: #fff;
+        }
+
+        .operation{
+            background-color:  hsl(0deg 0.79% 50.59%);
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <input class="calculator-screen" type="text" value="0" />
+        <div class="buttons-container">
+            <button class="btn operation" >+</button>
+            <button class="btn">7</button>
+            <button class="btn">4</button>
+            <button class="btn">1</button>
+            <button class="btn">.</button>
+
+            <button class="btn operation">-</button>
+            <button class="btn">8</button>
+            <button class="btn">5</button>
+            <button class="btn">2</button>
+            <button class="btn">0</button>
+
+            <button class="btn operation">*</button>
+            <button class="btn">9</button>
+            <button class="btn">6</button>
+            <button class="btn">3</button>
+            <button class="btn cut">C</button>
+
+            <button class="btn divide">/</button>
+            <button class="btn equal">=</button>
+        </div>
+
+    </div>
+</body>
+</html>
